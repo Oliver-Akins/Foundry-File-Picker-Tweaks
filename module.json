@@ -4,13 +4,15 @@
 	"description": "A module that provides tweaks for the File Picker",
 	"version": "1.0.0",
 	"compatibility": {
-		"minimum": "12",
-		"verified": "12"
+		"minimum": 12,
+		"verified": 12,
+		"maximum": 12
 	},
 	"authors": [
 		{
 			"name": "Oliver Akins",
-			"url": "https://oliver.akins.me"
+			"url": "https://oliver.akins.me",
+			"flags": {}
 		}
 	],
 	"esmodules": [
