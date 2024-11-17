@@ -2,7 +2,7 @@
 	"id": "file-picker-tweaks",
 	"title": "File Picker Tweaks",
 	"description": "A module that provides tweaks for the File Picker",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"compatibility": {
 		"minimum": 12,
 		"verified": 12,
@@ -11,8 +11,7 @@
 	"authors": [
 		{
 			"name": "Oliver Akins",
-			"url": "https://oliver.akins.me",
-			"flags": {}
+			"url": "https://oliver.akins.me"
 		}
 	],
 	"esmodules": [
@@ -26,8 +25,33 @@
 		}
 	],
 	"url": "https://github.com/Oliver-Akins/Foundry-File-Picker-Tweaks",
-	"manifest": "https://github.com/Oliver-Akins/foundry.dungeon/releases/latest/download/module.json",
-	"download": "https://github.com/Oliver-Akins/foundry.dungeon/releases/latest/download/file-picker-tweaks.zip",
+	"manifest": "https://github.com/Oliver-Akins/Foundry-File-Picker-Tweaks/releases/latest/download/module.json",
+	"download": "https://github.com/Oliver-Akins/Foundry-File-Picker-Tweaks/releases/latest/download/file-picker-tweaks.zip",
 	"readme": "README.md",
-	"bugs": "https://github.com/Oliver-Akins/Foundry-File-Picker-Tweaks/issues"
+	"bugs": "https://github.com/Oliver-Akins/Foundry-File-Picker-Tweaks/issues",
+	"relationships": {
+		"requires": [
+			{
+				"id": "permission-manager",
+				"type": "module",
+				"compatibility": {
+					"minimum": "1.0.1",
+					"verified": "1.0.1"
+				}
+			}
+		]
+	},
+	"flags": {
+		"permission-manager": {
+			"customPermissions": [
+				{
+					"id": "bypassFolderNavigationLock",
+					"name": "FPT.permissions.bypassFolderNavigationLock.name",
+					"hint": "FPT.permissions.bypassFolderNavigationLock.hint",
+					"gm": "always",
+					"default": [3, 4]
+				}
+			]
+		}
+	}
 }

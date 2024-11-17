@@ -6,8 +6,6 @@
 				"hint": "Enable folder restriction in the file explorer application, this makes it so that users can only see and upload into a specific folder within User Data"
 			},
 			"folderRestrictionBypassRole": {
-				"name": "Folder Restriction Bypass Role",
-				"hint": "Users with this role, or higher, will be able to bypass the folder restriction in the user data. GMs are always able to bypass the restriction",
 				"notifs": {
 					"disableRestriction": "Folder restriction disabled because changing the bypass role to Player"
 				}
@@ -18,6 +16,12 @@
 				"notifs": {
 					"dirNotExist": "Cannot set the restriction to a folder that doesn't exist"
 				}
+			}
+		},
+		"permissions": {
+			"bypassFolderNavigationLock": {
+				"name": "Folder Restriction Bypass",
+				"hint": "Users with this permission will be able to bypass the folder restriction in the user data, and upload files wherever in the user data they want to."
 			}
 		}
 	}
